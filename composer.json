@@ -1,0 +1,48 @@
+{
+    "name": "camelot/api-platform-geojson",
+    "description": "GeoJSON support for API Platform",
+    "type": "library",
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "api-platform/core": "^3.2",
+        "camelot/coding-style": "^3.0",
+        "doctrine/dbal": "^3.8 || ^4.0",
+        "doctrine/orm": "^2.19 || ^3.0",
+        "friendsofphp/php-cs-fixer": "^3.21",
+        "justinrainbow/json-schema": "^5.2",
+        "phpunit/phpunit": "^10.2",
+        "symfony/dependency-injection": "^6.4 || ^7.0",
+        "symfony/filesystem": "^6.4 || ^7.0",
+        "symfony/framework-bundle": "^6.4 || ^7.0",
+        "symfony/runtime": "^6.4 || ^7.0",
+        "symfony/yaml": "^6.4 || ^7.0",
+        "symfony/browser-kit": "^7.0",
+        "symfony/http-client": "^7.0",
+        "doctrine/doctrine-bundle": "^2.11"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gwendolen Lynch",
+            "email": "gwendolen.lynch@gamil.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Camelot\\GeoJSON\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Camelot\\GeoJSON\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/runtime": true
+        }
+    }
+}
